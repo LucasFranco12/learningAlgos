@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib.animation import FuncAnimation
 
 def linearRegression(x, y, learning_rate=0.01, iters=1000):
-    # Initialize parameters
+    # Initialize random slop and y-intercept
     m = np.random.uniform(0, 1) * -1
     c = np.random.uniform(0, 1) * -1
     y_guess = []
@@ -33,8 +33,8 @@ def linearRegression(x, y, learning_rate=0.01, iters=1000):
         y_guess.append(y_pred)
 
     # Calculate R-squared (how well our line fits)
-    ss_total = np.sum((y - np.mean(y)) ** 2)
-    ss_residual = np.sum((y - y_pred) ** 2)
+    ss_total = np.sum((y - np.mean(y)) ** 2) # Total = (data - mean)^2
+    ss_residual = np.sum((y - y_pred) ** 2)  # Residual = (data - prediction)^2
     r_squared = 1 - (ss_residual / ss_total)
 
     return m, c, y_pred, cost, r_squared, y_guess
