@@ -7,5 +7,5 @@ https://www.youtube.com/watch?v=uyUfxD-y02Q
 [![Watch the Project Demo](https://img.youtube.com/vi/uyUfxD-y02Q/0.jpg)](https://www.youtube.com/watch?v=uyUfxD-y02Q)
 
 ## Research Paper
-[Chess Vision Technical Paper](/docs/chess_vision_paper.pdf)
+[Chess Vision Paper](/docs/chess_vision_paper_unfinished.pdf)
 
